@@ -1,0 +1,28 @@
+[
+  {
+    "ID": "ST0001",
+    "name": "Ha Quy Dung",
+    "sex": "Male",
+    "birthDay": "10/06/1997",
+    "department": "SoICT",
+    "courseResults" : [
+      {
+        "IDClass": "C0001",
+        "nameSubject": "Math 1",
+        "markOfMiddterm": 7,
+        "markOfFinalTerm": 9,
+        "result": 10,
+        "classify": "A"
+      },
+
+      {
+        "IDClass": "C0002",
+        "nameSubject": "Math 2",
+        "markOfMiddterm": 7,
+        "markOfFinalTerm": 9,
+        "result": 10,
+        "classify": "B"
+      }
+    ]
+  }
+]

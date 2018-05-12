@@ -1,0 +1,48 @@
+[
+  {
+    "ID": "00001",
+    "name": "Math 1",
+    "weightOfSubject": 3,
+    "weightOfMiddterm": 0.3,
+    "weigthOfFinalTest": 0.7,
+    "preSubject": []
+  },
+
+  {
+    "ID": "00002",
+    "name": "Math 2",
+    "weightOfSubject": 3,
+    "weightOfMiddterm": 0.3,
+    "weigthOfFinalTest": 0.7,
+    "preSubject": []
+  },
+
+  {
+    "ID": "00003",
+    "name": "Math 3",
+    "weightOfSubject": 3,
+    "weightOfMiddterm": 0.3,
+    "weigthOfFinalTest": 0.7,
+    "preSubject": [
+      {
+        "ID": "00002",
+        "name": "Math 2",
+        "weightOfSubject": 3,
+        "weightOfMiddterm": 0.3,
+        "weigthOfFinalTest": 0.7,
+        "preSubject": []
+      }
+    ]
+  },
+
+  {
+    "ID": "00004",
+    "name": "OOP",
+    "weightOfSubject": 3,
+    "weightOfMiddterm": 0.3,
+    "weigthOfFinalTest": 0.7,
+    "preSubject": []
+  }
+
+
+]

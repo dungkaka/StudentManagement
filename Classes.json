@@ -1,0 +1,53 @@
+[
+  {
+    "ID": "C0001",
+    "semesterName": "2017.1",
+    "classroom": "D9-407",
+    "lecturer":   {
+      "ID": "L0001",
+      "name": "Trinh Thanh Trung",
+      "sex": "Male",
+      "phoneNumber": "0123456789",
+      "birthDay": "10/12/1990",
+      "address": "Hai Ba Trung, Ha Noi",
+      "Department": "SoICT"
+    },
+    "subject":   {
+      "ID": "00001",
+      "name": "Math 1",
+      "weightOfSubject": 3,
+      "weightOfMiddterm": 0.3,
+      "weigthOfFinalTest": 0.7,
+      "preSubject": []
+    },
+    "timeStart": "05/2017",
+    "timeEnd": "12/2017"
+  },
+
+  {
+    "ID": "C0002",
+    "semesterName": "2017.1",
+    "classroom": "D9-406",
+    "lecturer":    {
+      "ID": "L0002",
+      "name": "Trinh Loan",
+      "sex": "Male",
+      "phoneNumber": "0123456789",
+      "birthDay": "10/12/1990",
+      "address": "Hai Ba Trung, Ha Noi",
+      "Department": "SoICT"
+    },
+    "subject":   {
+      "ID": "00002",
+      "name": "Math 2",
+      "weightOfSubject": 3,
+      "weightOfMiddterm": 0.3,
+      "weigthOfFinalTest": 0.7,
+      "preSubject": []
+    },
+    "timeStart": "05/2017",
+    "timeEnd": "12/2017"
+  }
+
+
+]

@@ -1,0 +1,7 @@
+CS0001 Ha_Quy_Dung Male 10/06/1997 SoICT
+CS0002 Le_Van_Vuong Male 01/02/1997 SoICT
+CS0003 Ngo_Anh_Tuan Male 02/03/1997 SoICT
+CS0004 Cao_Mai_Linh Female 04/05/1997 SoICT
+YS0001 Tran_Thi_Thoa Female 05/06/1997 SoICT
+YS0002 Doan_Sy_Hung Male 06/07/1997 Sami
+YS0003 Phan_Huy_Hung Male 07/08/1997 Sami 
