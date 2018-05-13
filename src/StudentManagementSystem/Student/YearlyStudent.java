@@ -26,8 +26,8 @@ public class YearlyStudent extends Student{
         int size = 0;
         for (SemesterOfStudent temp: semesterOfStudents) {
             for (CourseResult temp1 : temp.getCourseResults()) {
-                sum += temp1.getResult() * temp1.getClassByID().getSubject().getWeightOfSubject();
-                size += temp1.getClassByID().getSubject().getWeightOfSubject();
+                sum += temp1.getResult() * temp1.getSubjectbyIDSubject().getWeightOfSubject();
+                size += temp1.getSubjectbyIDSubject().getWeightOfSubject();
             }
         }
 
@@ -53,7 +53,7 @@ public class YearlyStudent extends Student{
     public CourseResult findCourseResultByNameSubject(String name) {
         for (SemesterOfStudent temp: semesterOfStudents) {
             for (CourseResult temp1 : temp.getCourseResults()) {
-                if (temp1.getClassByID().getSubject().getName().contains(name)) {
+                if (temp1.getSubjectbyIDSubject().getName().contains(name)) {
                     return temp1;
                 }
             }
@@ -65,7 +65,7 @@ public class YearlyStudent extends Student{
     public CourseResult findCourseResultByIDSubject(String ID) {
         for (SemesterOfStudent temp: semesterOfStudents) {
             for (CourseResult temp1 : temp.getCourseResults()) {
-                if (temp1.getClassByID().getSubject().getID().contains(ID)) {
+                if (temp1.getSubjectbyIDSubject().getID().contains(ID)) {
                     return temp1;
                 }
             }
@@ -73,39 +73,52 @@ public class YearlyStudent extends Student{
         return null;
     }
 
+    public boolean checkExistSemesterByIDSemester(String IDSemester) {
+        for (SemesterOfStudent temp: semesterOfStudents) {
+            if (IDSemester.equals(temp.getIDsemester())) return true;
+        }
+
+        return false;
+    }
+
     public String showDetail() {
         String s = "";
         s += "ID: " + this.getID() + "\n";
         s += "Name: " + this.getName() + "\n";
-        s += "Sex: " + this.getSex() + "\n";
+        s += "Gender: " + this.getSex() + "\n";
         s += "Birthday: " + this.getBirthDay() + "\n";
         s += "Age: " + this.getAge() + "\n";
         s += "Department" + this.getDepartment() + "\n";
         s += "Type: " + "Credit Student" + "\n";
+        s += "Completed Semester: ";
+        for (SemesterOfStudent temp: semesterOfStudents) {
+            if(temp.getGPA() >= 5) s+= temp.getIDsemester() + ", ";
+        }
+        s += "\n";
 
         return s;
     }
 
     @Override
-    public String showDetailResultStudying() {
-        String s = "";
+    public void showDetailResultStudying() {
 
-        for (SemesterOfStudent temp: semesterOfStudents) {
-            s += temp.getSemesterName() + ": \n";
-            for (CourseResult temp1: temp.getCourseResults()) {
-                s += temp1.getNameSubject() + " - ";
-                s += "Middterm: " + temp1.getMarkOfMiddterm() + " - ";
-                s += "Final: " + temp1.getMarkOfFinalTerm() + " - ";
-                s += "Result: " + temp1.getResult() + " - ";
-                s += "Classify: " + temp1.getClassify() + "\n";
+        int i = 0;
+        System.out.println("--------------------------------------------------------------------------------------------------------------------");
+        System.out.println("                     " + "ID Student: "  + getID() + "  -  " + "Name: " + getName() );
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-4s | %-30s | %-8s | %-10s | %-10s | %-10s | %-10s | %-10s |\n", "", "Subject", "ID", "Weight", "Middterm", "Final", "Result", "Classify");
+        System.out.println("|-------------------------------------------------------------------------------------------------------------------|");
+        for (SemesterOfStudent temp0: semesterOfStudents) {
+            System.out.println("|-------------------------------------------------------------------------------------------------------------------|");
+            for (CourseResult temp : temp0.getCourseResults()) {
+                System.out.printf("| %-4s | %-30s | %-8s | %-10d | %-10.1f | %-10.1f | %-10.1f | %-10s |\n", i++, temp.getNameSubject(), temp.getIDSubject(), temp.getSubjectbyIDSubject().getWeightOfSubject(), temp.getMarkOfMiddterm(), temp.getMarkOfFinalTerm(), temp.getResult(), temp.getClassify());
             }
-            s += "--> GPA: " + temp.getGPA() + "\n";
+            System.out.printf("| --> %-109s |\n", "Semester Name: " + temp0.getSemesterName() + " - " + "GPA: " + temp0.getGPA() );
         }
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------*");
 
-        s += "---------------------------\n";
-        s += "CPA: " + this.getCPA() + "\n\n";
-
-        return s;
+        System.out.println("--> CPA: " + this.getCPA() + "\n");
     }
+
 
 }

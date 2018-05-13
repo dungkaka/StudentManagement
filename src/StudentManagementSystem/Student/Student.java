@@ -88,7 +88,7 @@ public abstract class Student {
     public abstract CourseResult findCourseResultByNameSubject(String name);
 
     public abstract String showDetail();
-    public abstract String showDetailResultStudying();
+    public abstract void showDetailResultStudying();
 
     public CreditStudent toCreditStudent() {
         if (this instanceof CreditStudent) {

@@ -12,31 +12,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CourseResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/CourseResult.java">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="66" column="136" lean-forward="false" selection-start-line="66" selection-start-column="136" selection-end-line="66" selection-end-column="136" />
+            <state relative-caret-position="1608">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="method#CourseResult#2;class#CourseResult#0" expanded="false" />
-                <element signature="method#getClassByID#0;class#CourseResult#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="117" column="62" lean-forward="false" selection-start-line="117" selection-start-column="62" selection-end-line="117" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getlistStudent#0;class#Class#0" expanded="false" />
-                <element signature="e#1998#2007#0" expanded="true" />
-                <element signature="method#showListSudent#0;class#Class#0" expanded="false" />
+                <element signature="method#setID#0;class#Student#0" expanded="false" />
+                <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
+                <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
+                <element signature="e#2916#2954#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,62 +30,30 @@
       <file leaf-file-name="Management.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/Management.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="498" column="76" lean-forward="false" selection-start-line="498" selection-start-column="76" selection-end-line="498" selection-end-column="76" />
+            <state relative-caret-position="369">
+              <caret line="580" column="58" lean-forward="false" selection-start-line="580" selection-start-column="58" selection-end-line="580" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#603#612#0" expanded="true" />
-                <element signature="e#679#689#0" expanded="true" />
-                <element signature="e#754#763#0" expanded="true" />
-                <element signature="e#825#832#0" expanded="true" />
-                <element signature="e#899#909#0" expanded="true" />
-                <element signature="e#994#1013#0" expanded="true" />
-                <element signature="e#1229#1244#0" expanded="true" />
-                <element signature="e#2136#2145#0" expanded="true" />
-                <element signature="e#2566#2576#0" expanded="true" />
-                <element signature="e#2996#3003#0" expanded="true" />
                 <element signature="method#findStudentByID#0;class#Management#0" expanded="false" />
                 <element signature="method#findLecturerByID#0;class#Management#0" expanded="false" />
                 <element signature="method#findSubjectByID#0;class#Management#0" expanded="false" />
                 <element signature="method#findClassByID#0;class#Management#0" expanded="false" />
                 <element signature="method#findSemesterByID#0;class#Management#0" expanded="false" />
-                <element signature="method#findSemesterOfStudentByName#0;class#Management#0" expanded="false" />
+                <element signature="method#findSemesterOfStudentByNameAndID#0;class#Management#0" expanded="false" />
+                <element signature="method#showListSubject#0;class#Management#0" expanded="false" />
+                <element signature="method#showListLecture#0;class#Management#0" expanded="false" />
+                <element signature="method#showListClass#0;class#Management#0" expanded="false" />
+                <element signature="method#showListSemester#0;class#Management#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java">
+      <file leaf-file-name="Classes.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-696">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="method#setID#0;class#Student#0" expanded="false" />
-                <element signature="method#getAge#0;class#Student#0" expanded="false" />
-                <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
-                <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
-                <element signature="e#2918#2956#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subjects.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Subjects.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GradingForCourse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/GradingForCourse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="-24">
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -109,29 +62,49 @@
       <file leaf-file-name="CreditStudents.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CreditStudents.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="3528">
+              <caret line="0" column="147421" lean-forward="false" selection-start-line="0" selection-start-column="147421" selection-end-line="0" selection-end-column="147421" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graduation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YearlyStudents.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YearlyStudents.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="0" column="46943" lean-forward="false" selection-start-line="0" selection-start-column="46943" selection-end-line="0" selection-end-column="46943" />
+              <folding>
+                <marker date="1526205700944" expanded="true" signature="0:1" ph="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graduation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/Graduation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="1776">
+              <caret line="77" column="95" lean-forward="false" selection-start-line="77" selection-start-column="95" selection-end-line="77" selection-end-column="95" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes.json">
+      <file leaf-file-name="YearlyStudent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/YearlyStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="1104">
+              <caret line="95" column="9" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="95" selection-end-column="9" />
+              <folding>
+                <element signature="method#YearlyStudent#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#setSemesterOfStudents#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#getCPA#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#getGPAOfSemester#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#findCourseResultByNameSubject#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#findCourseResultByIDSubject#0;class#YearlyStudent#0" expanded="false" />
+                <element signature="method#showDetailResultStudying#0;class#YearlyStudent#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +112,8 @@
       <file leaf-file-name="CreditStudent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/CreditStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="173" column="46" lean-forward="false" selection-start-line="173" selection-start-column="46" selection-end-line="173" selection-end-column="46" />
+            <state relative-caret-position="1704">
+              <caret line="181" column="82" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="181" selection-end-column="82" />
               <folding>
                 <element signature="method#getAccumulatedCredit#0;class#CreditStudent#0" expanded="false" />
                 <element signature="method#getAccumulatedSubject#0;class#CreditStudent#0" expanded="false" />
@@ -149,13 +122,36 @@
                 <element signature="method#getNumberOfRegisterCredit#0;class#CreditStudent#0" expanded="false" />
                 <element signature="method#getCPA#0;class#CreditStudent#0" expanded="false" />
                 <element signature="method#getGPAOfSemester#0;class#CreditStudent#0" expanded="false" />
-                <element signature="e#3569#3570#0" expanded="true" />
-                <element signature="e#3610#3611#0" expanded="true" />
                 <element signature="method#canRegisterClass#0;class#CreditStudent#0" expanded="false" />
-                <element signature="e#4046#4047#0" expanded="true" />
-                <element signature="e#4113#4114#0" expanded="true" />
+                <element signature="e#4128#4129#0" expanded="true" />
+                <element signature="e#4195#4196#0" expanded="true" />
                 <element signature="method#findCourseResultByNameSubject#0;class#CreditStudent#0" expanded="false" />
                 <element signature="method#findCourseResultByIDSubject#0;class#CreditStudent#0" expanded="false" />
+                <element signature="method#checkExistSubject#0;class#CreditStudent#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentManagement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentManagement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="method#inforOfStudent#0;class#StudentManagement#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="method#registerForCreditStudent#0;class#StudentRegister#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -169,6 +165,42 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>08/2017</find>
+      <find>12/2017</find>
+      <find>01/2017</find>
+      <find>2014</find>
+      <find>2018.1</find>
+      <find>2018</find>
+      <find>2019.1</find>
+      <find>2019.2</find>
+      <find>08/2019</find>
+      <find>12/2019</find>
+      <find>01/2019</find>
+      <find>05/2019</find>
+      <find>2020.1</find>
+      <find>2020.2</find>
+      <find>08/2020</find>
+      <find>12/2020</find>
+      <find>01/2020</find>
+      <find>05/2020</find>
+      <find>20171</find>
+      <find>2017.2</find>
+      <find>2013.1</find>
+      <find>20172</find>
+      <find>20181</find>
+      <find>20182</find>
+      <find>20191</find>
+      <find>20201</find>
+      <find>20202</find>
+      <find>20211</find>
+      <find>20212</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -194,32 +226,36 @@
         <option value="$PROJECT_DIR$/GradeStudent.json" />
         <option value="$PROJECT_DIR$/StudentManagement.json" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/GradingForCourse.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Subject.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Semester.java" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/Lecturer.java" />
+        <option value="$PROJECT_DIR$/Students.json" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Class.java" />
+        <option value="$PROJECT_DIR$/Lectures.json" />
+        <option value="$PROJECT_DIR$/temp.json" />
+        <option value="$PROJECT_DIR$/Subjects.json" />
+        <option value="$PROJECT_DIR$/YearlyStudent.json" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Semester.java" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentRegister.java" />
+        <option value="$PROJECT_DIR$/Classes.json" />
+        <option value="$PROJECT_DIR$/SemesterOfStudents.json" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/SemesterOfStudent.java" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/CourseResult.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentManagement.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentRegister.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Subject.java" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/Student/YearlyStudent.java" />
-        <option value="$PROJECT_DIR$/Lectures.json" />
-        <option value="$PROJECT_DIR$/Subjects.json" />
-        <option value="$PROJECT_DIR$/Students.json" />
-        <option value="$PROJECT_DIR$/Classes.json" />
-        <option value="$PROJECT_DIR$/CreditStudents.json" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Class.java" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/Student/CreditStudent.java" />
-        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/Management.java" />
+        <option value="$PROJECT_DIR$/Semesters.json" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentManagement.java" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java" />
         <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/Graduation.java" />
+        <option value="$PROJECT_DIR$/CreditStudents.json" />
+        <option value="$PROJECT_DIR$/YearlyStudents.json" />
+        <option value="$PROJECT_DIR$/src/StudentManagementSystem/Management/Management.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="297" />
-    <option name="y" value="18" />
-    <option name="width" value="1500" />
-    <option name="height" value="989" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="12" />
+    <option name="width" value="1643" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -236,8 +272,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,11 +312,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -421,34 +457,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="18" width="1500" height="989" extended-state="0" />
+    <frame x="12" y="0" width="1643" height="1020" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5878136" sideWeight="0.5027365" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38674033" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.16903073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="630" y="54" width="1131" height="925" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18442154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32273263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18374558" sideWeight="0.4972635" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -456,110 +493,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="method#setID#0;class#Student#0" expanded="false" />
-            <element signature="method#getAge#0;class#Student#0" expanded="false" />
-            <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
-            <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
-            <element signature="e#2918#2956#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/SemesterOfStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1289#1290#0" expanded="false" />
-            <element signature="e#1331#1332#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-            <element signature="e#1399#1400#0" expanded="false" />
-            <element signature="e#1448#1449#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1554#1555#0" expanded="false" />
-            <element signature="e#1599#1600#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-            <element signature="e#1859#1860#0" expanded="false" />
-            <element signature="e#1895#1896#0" expanded="false" />
-            <element signature="e#1969#1970#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-            <element signature="e#570#579#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Lecturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/CourseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="method#getResult#0;class#CourseResult#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1940#1941#0" expanded="false" />
-            <element signature="method#getClassify#0;class#CourseResult#0" expanded="false" />
-            <element signature="e#2411#2412#0" expanded="false" />
-            <element signature="e#2461#2462#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-            <element signature="e#570#579#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getlistStudent#0;class#Class#0" expanded="false" />
+            <element signature="method#showListSudent#0;class#Class#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,17 +516,16 @@
           <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#603#612#0" expanded="true" />
-            <element signature="e#679#689#0" expanded="true" />
-            <element signature="e#754#763#0" expanded="true" />
-            <element signature="e#825#832#0" expanded="true" />
-            <element signature="e#899#909#0" expanded="true" />
-            <element signature="e#994#1013#0" expanded="true" />
             <element signature="method#findStudentByID#0;class#Management#0" expanded="false" />
             <element signature="method#findLecturerByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSubjectByID#0;class#Management#0" expanded="false" />
             <element signature="method#findClassByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSemesterByID#0;class#Management#0" expanded="false" />
+            <element signature="method#findSemesterOfStudentByNameAndID#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSubject#0;class#Management#0" expanded="false" />
+            <element signature="method#showListLecture#0;class#Management#0" expanded="false" />
+            <element signature="method#showListClass#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSemester#0;class#Management#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,10 +535,13 @@
         <state relative-caret-position="384">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
+            <element signature="method#YearlyStudent#0;class#YearlyStudent#0" expanded="false" />
             <element signature="method#setSemesterOfStudents#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getCPA#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getGPAOfSemester#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByNameSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByIDSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#showDetailResultStudying#0;class#YearlyStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,7 +550,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="method#Semester#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByID#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByName#0;class#Semester#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,10 +564,9 @@
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="109" selection-end-column="20" />
           <folding>
             <element signature="method#setID#0;class#Student#0" expanded="false" />
-            <element signature="method#getAge#0;class#Student#0" expanded="false" />
             <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
             <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
-            <element signature="e#2918#2956#0" expanded="false" />
+            <element signature="e#2916#2954#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,22 +576,10 @@
         <state relative-caret-position="360">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1289#1290#0" expanded="false" />
-            <element signature="e#1331#1332#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-            <element signature="e#1399#1400#0" expanded="false" />
-            <element signature="e#1448#1449#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1554#1555#0" expanded="false" />
-            <element signature="e#1599#1600#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-            <element signature="e#1859#1860#0" expanded="false" />
-            <element signature="e#1895#1896#0" expanded="false" />
-            <element signature="e#1969#1970#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="method#findCourseByIDSubject#0;class#SemesterOfStudent#0" expanded="false" />
+            <element signature="method#showDetail#0;class#SemesterOfStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,15 +596,12 @@
             <element signature="method#getNumberOfRegisterCredit#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getCPA#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getGPAOfSemester#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#3569#3570#0" expanded="true" />
-            <element signature="e#3610#3611#0" expanded="true" />
             <element signature="method#canRegisterClass#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#4046#4047#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
             <element signature="method#findCourseResultByNameSubject#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#findCourseResultByIDSubject#0;class#CreditStudent#0" expanded="false" />
-            <element signature="method#showDetail#0;class#CreditStudent#0" expanded="false" />
-            <element signature="method#showDetailResultStudying#0;class#CreditStudent#0" expanded="false" />
+            <element signature="method#checkExistSubject#0;class#CreditStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -673,7 +610,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="method#Lecturer#0;class#Lecturer#0" expanded="false" />
+            <element signature="method#showDetail#0;class#Lecturer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,14 +622,34 @@
         <state relative-caret-position="168">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="method#getResult#0;class#CourseResult#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1940#1941#0" expanded="false" />
-            <element signature="method#getClassify#0;class#CourseResult#0" expanded="false" />
-            <element signature="e#2411#2412#0" expanded="false" />
-            <element signature="e#2461#2462#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2781#2782#0" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3523#3524#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,7 +658,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getlistStudent#0;class#Class#0" expanded="false" />
+            <element signature="method#showListSudent#0;class#Class#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -708,17 +672,16 @@
           <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#603#612#0" expanded="true" />
-            <element signature="e#679#689#0" expanded="true" />
-            <element signature="e#754#763#0" expanded="true" />
-            <element signature="e#825#832#0" expanded="true" />
-            <element signature="e#899#909#0" expanded="true" />
-            <element signature="e#994#1013#0" expanded="true" />
             <element signature="method#findStudentByID#0;class#Management#0" expanded="false" />
             <element signature="method#findLecturerByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSubjectByID#0;class#Management#0" expanded="false" />
             <element signature="method#findClassByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSemesterByID#0;class#Management#0" expanded="false" />
+            <element signature="method#findSemesterOfStudentByNameAndID#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSubject#0;class#Management#0" expanded="false" />
+            <element signature="method#showListLecture#0;class#Management#0" expanded="false" />
+            <element signature="method#showListClass#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSemester#0;class#Management#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,15 +698,12 @@
             <element signature="method#getNumberOfRegisterCredit#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getCPA#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getGPAOfSemester#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#3569#3570#0" expanded="true" />
-            <element signature="e#3610#3611#0" expanded="true" />
             <element signature="method#canRegisterClass#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#4046#4047#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
             <element signature="method#findCourseResultByNameSubject#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#findCourseResultByIDSubject#0;class#CreditStudent#0" expanded="false" />
-            <element signature="method#showDetail#0;class#CreditStudent#0" expanded="false" />
-            <element signature="method#showDetailResultStudying#0;class#CreditStudent#0" expanded="false" />
+            <element signature="method#checkExistSubject#0;class#CreditStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,10 +713,13 @@
         <state relative-caret-position="384">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
+            <element signature="method#YearlyStudent#0;class#YearlyStudent#0" expanded="false" />
             <element signature="method#setSemesterOfStudents#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getCPA#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getGPAOfSemester#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByNameSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByIDSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#showDetailResultStudying#0;class#YearlyStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -765,7 +728,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#Semester#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByID#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByName#0;class#Semester#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -775,10 +742,9 @@
           <caret line="103" column="54" lean-forward="true" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
           <folding>
             <element signature="method#setID#0;class#Student#0" expanded="false" />
-            <element signature="method#getAge#0;class#Student#0" expanded="false" />
             <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
             <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
-            <element signature="e#2918#2956#0" expanded="false" />
+            <element signature="e#2916#2954#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,22 +754,10 @@
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1289#1290#0" expanded="false" />
-            <element signature="e#1331#1332#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-            <element signature="e#1399#1400#0" expanded="false" />
-            <element signature="e#1448#1449#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1554#1555#0" expanded="false" />
-            <element signature="e#1599#1600#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-            <element signature="e#1859#1860#0" expanded="false" />
-            <element signature="e#1895#1896#0" expanded="false" />
-            <element signature="e#1969#1970#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="method#findCourseByIDSubject#0;class#SemesterOfStudent#0" expanded="false" />
+            <element signature="method#showDetail#0;class#SemesterOfStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -814,116 +768,20 @@
           <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-            <element signature="e#570#579#0" expanded="false" />
+            <element signature="e#1813#1859#0" expanded="false" />
+            <element signature="method#showListIDPreSubject#0;class#Subject#0" expanded="false" />
+            <element signature="method#showDetail#0;class#Subject#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Student/Subject.java" />
     <entry file="file://$PROJECT_DIR$/src/StudentManagement/Management.java" />
-    <entry file="file://$PROJECT_DIR$/Semesters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SemesterOfStudents.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentManagement.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#280#281#0" expanded="false" />
-            <element signature="e#328#329#0" expanded="false" />
-            <element signature="e#482#483#0" expanded="false" />
-            <element signature="e#525#526#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/YearlyStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="11" column="97" lean-forward="false" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
-          <folding>
-            <element signature="method#YearlyStudent#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#setSemesterOfStudents#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#getCPA#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#getGPAOfSemester#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#findCourseResultByNameSubject#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#findCourseResultByIDSubject#0;class#YearlyStudent#0" expanded="false" />
-            <element signature="method#showDetail#0;class#YearlyStudent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding>
-            <element signature="method#Semester#0;class#Semester#0" expanded="false" />
-            <element signature="method#findSubjectByID#0;class#Semester#0" expanded="false" />
-            <element signature="method#findSubjectByName#0;class#Semester#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/SemesterOfStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-713">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="method#setGPA#0;class#SemesterOfStudent#0" expanded="false" />
-            <element signature="method#findCourseByIDSubject#0;class#SemesterOfStudent#0" expanded="false" />
-            <element signature="method#getSemesterByID#0;class#SemesterOfStudent#0" expanded="false" />
-            <element signature="method#showDetail#0;class#SemesterOfStudent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-            <element signature="method#showListPreSubject#0;class#Subject#0" expanded="false" />
-            <element signature="method#showDetail#0;class#Subject#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentManagement.json" />
     <entry file="jar://$PROJECT_DIR$/src/external_libs/gson-2.6.2.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="504" column="0" lean-forward="false" selection-start-line="504" selection-start-column="0" selection-end-line="504" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +796,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/temp.json" />
+    <entry file="file://$PROJECT_DIR$/temp.json" />
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentManagement.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="2579" column="0" lean-forward="false" selection-start-line="2579" selection-start-column="0" selection-end-line="2579" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="869" column="0" lean-forward="false" selection-start-line="869" selection-start-column="0" selection-end-line="869" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/GradingForCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="88" lean-forward="false" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
+          <folding>
+            <element signature="method#setMark#0;class#GradingForCourse#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="method#Subject#0;class#Subject#0" expanded="false" />
+            <element signature="e#1813#1859#0" expanded="false" />
+            <element signature="method#showListIDPreSubject#0;class#Subject#0" expanded="false" />
+            <element signature="method#showDetail#0;class#Subject#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/CourseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="971">
+          <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+          <folding>
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2781#2782#0" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3523#3524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -954,7 +900,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentManagement.iml">
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Semester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding>
+            <element signature="method#Semester#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByID#0;class#Semester#0" expanded="false" />
+            <element signature="method#findSubjectByName#0;class#Semester#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Semesters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="356" column="7" lean-forward="false" selection-start-line="356" selection-start-column="7" selection-end-line="356" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getlistStudent#0;class#Class#0" expanded="false" />
+            <element signature="method#showListSudent#0;class#Class#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/SemesterOfStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="method#findCourseByIDSubject#0;class#SemesterOfStudent#0" expanded="false" />
+            <element signature="method#showDetail#0;class#SemesterOfStudent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subjects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lecturers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="101" column="2" lean-forward="false" selection-start-line="101" selection-start-column="2" selection-end-line="109" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SemesterOfStudents.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="method#registerForCreditStudent#0;class#StudentRegister#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/YearlyStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="95" column="9" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="95" selection-end-column="9" />
+          <folding>
+            <element signature="method#YearlyStudent#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#setSemesterOfStudents#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getCPA#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#getGPAOfSemester#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByNameSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#findCourseResultByIDSubject#0;class#YearlyStudent#0" expanded="false" />
+            <element signature="method#showDetailResultStudying#0;class#YearlyStudent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/StudentManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="method#inforOfStudent#0;class#StudentManagement#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/Graduation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="77" column="95" lean-forward="false" selection-start-line="77" selection-start-column="95" selection-end-line="77" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreditStudents.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3528">
+          <caret line="0" column="147421" lean-forward="false" selection-start-line="0" selection-start-column="147421" selection-end-line="0" selection-end-column="147421" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YearlyStudents.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="0" column="46943" lean-forward="false" selection-start-line="0" selection-start-column="46943" selection-end-line="0" selection-end-column="46943" />
+          <folding>
+            <marker date="1526205700944" expanded="true" signature="0:1" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -962,68 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lectures.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="117" column="62" lean-forward="false" selection-start-line="117" selection-start-column="62" selection-end-line="117" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getlistStudent#0;class#Class#0" expanded="false" />
-            <element signature="e#1998#2007#0" expanded="true" />
-            <element signature="method#showListSudent#0;class#Class#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Subjects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreditStudents.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/CourseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="66" column="136" lean-forward="false" selection-start-line="66" selection-start-column="136" selection-end-line="66" selection-end-column="136" />
-          <folding>
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="method#CourseResult#2;class#CourseResult#0" expanded="false" />
-            <element signature="method#getClassByID#0;class#CourseResult#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/CreditStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="173" column="46" lean-forward="false" selection-start-line="173" selection-start-column="46" selection-end-line="173" selection-end-column="46" />
+        <state relative-caret-position="1704">
+          <caret line="181" column="82" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="181" selection-end-column="82" />
           <folding>
             <element signature="method#getAccumulatedCredit#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getAccumulatedSubject#0;class#CreditStudent#0" expanded="false" />
@@ -1032,69 +1047,53 @@
             <element signature="method#getNumberOfRegisterCredit#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getCPA#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#getGPAOfSemester#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#3569#3570#0" expanded="true" />
-            <element signature="e#3610#3611#0" expanded="true" />
             <element signature="method#canRegisterClass#0;class#CreditStudent#0" expanded="false" />
-            <element signature="e#4046#4047#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
             <element signature="method#findCourseResultByNameSubject#0;class#CreditStudent#0" expanded="false" />
             <element signature="method#findCourseResultByIDSubject#0;class#CreditStudent#0" expanded="false" />
+            <element signature="method#checkExistSubject#0;class#CreditStudent#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Student/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="1608">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="method#setID#0;class#Student#0" expanded="false" />
-            <element signature="method#getAge#0;class#Student#0" expanded="false" />
             <element signature="method#toCreditStudent#0;class#Student#0" expanded="false" />
             <element signature="method#toYearlyStudent#0;class#Student#0" expanded="false" />
-            <element signature="e#2918#2956#0" expanded="false" />
+            <element signature="e#2916#2954#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/Management.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="498" column="76" lean-forward="false" selection-start-line="498" selection-start-column="76" selection-end-line="498" selection-end-column="76" />
+        <state relative-caret-position="369">
+          <caret line="580" column="58" lean-forward="false" selection-start-line="580" selection-start-column="58" selection-end-line="580" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#603#612#0" expanded="true" />
-            <element signature="e#679#689#0" expanded="true" />
-            <element signature="e#754#763#0" expanded="true" />
-            <element signature="e#825#832#0" expanded="true" />
-            <element signature="e#899#909#0" expanded="true" />
-            <element signature="e#994#1013#0" expanded="true" />
-            <element signature="e#1229#1244#0" expanded="true" />
-            <element signature="e#2136#2145#0" expanded="true" />
-            <element signature="e#2566#2576#0" expanded="true" />
-            <element signature="e#2996#3003#0" expanded="true" />
             <element signature="method#findStudentByID#0;class#Management#0" expanded="false" />
             <element signature="method#findLecturerByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSubjectByID#0;class#Management#0" expanded="false" />
             <element signature="method#findClassByID#0;class#Management#0" expanded="false" />
             <element signature="method#findSemesterByID#0;class#Management#0" expanded="false" />
-            <element signature="method#findSemesterOfStudentByName#0;class#Management#0" expanded="false" />
+            <element signature="method#findSemesterOfStudentByNameAndID#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSubject#0;class#Management#0" expanded="false" />
+            <element signature="method#showListLecture#0;class#Management#0" expanded="false" />
+            <element signature="method#showListClass#0;class#Management#0" expanded="false" />
+            <element signature="method#showListSemester#0;class#Management#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/GradingForCourse.java">
+    <entry file="file://$PROJECT_DIR$/Classes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentManagementSystem/Management/Graduation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="-24">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding />
         </state>
       </provider>

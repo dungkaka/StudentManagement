@@ -15,16 +15,24 @@ public class StudentManagement {
     }
 
     public String inforOfStudent(Student student) {
-        return student.showDetail();
+
+        return
+                "---------------------------------------------\n"
+                + student.showDetail()
+                + "---------------------------------------------\n";
     }
 
-    public String showListInforStudent() {
-        String s = "";
-        for (Student temp: Management.students) {
-            s += temp.showDetail();
+    public void showListInforStudent() {
+        System.out.println("\n*--------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-12s| %-30s| %-7s| %-12s| %-5s| %-20s |\n", "ID", "NAME", "GENDER", "BIRTHDAY", "AGE", "DEPARTMENT");
+        System.out.println("|-------------|-------------------------------|--------|-------------|------|----------------------|");
+        for (Student temp : Management.students) {
+            System.out.printf("| %-12s| %-30s| %-7s| %-12s| %-5s| %-20s |\n", temp.getID(), temp.getName(), temp.getSex(), temp.getBirthDay(), temp.getAge(), temp.getDepartment());
         }
 
-        return s;
+        System.out.println("*--------------------------------------------------------------------------------------------------*");
+
     }
+
 
 }

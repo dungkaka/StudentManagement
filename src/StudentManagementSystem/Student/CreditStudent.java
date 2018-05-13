@@ -3,9 +3,11 @@ package StudentManagementSystem.Student;
 import StudentManagementSystem.Class;
 import StudentManagementSystem.CourseResult;
 import StudentManagementSystem.Management.Management;
+import StudentManagementSystem.Subject;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.zip.CheckedOutputStream;
 
 public class CreditStudent extends Student {
     int accumulatedCredit;
@@ -156,37 +158,51 @@ public class CreditStudent extends Student {
         return null;
     }
 
+    public boolean checkExistSubject(Subject subject) {
+        for( CourseResult temp: courseResults) {
+            if(subject.getID().equals(temp.getIDSubject()))
+                return true;
+        }
+
+        return false;
+    }
+
     public String showDetail() {
         String s = "";
         s += "ID: " + this.getID() + "\n";
         s += "Name: " + this.getName() + "\n";
-        s += "Sex: " + this.getSex() + "\n";
+        s += "Gender: " + this.getSex() + "\n";
         s += "Birthday: " + this.getBirthDay() + "\n";
         s += "Age: " + this.getAge() + "\n";
         s += "Department: " + this.getDepartment() + "\n";
         s += "Type: " + "Credit Student" + "\n\n";
+        s += "CPA: " + this.getCPA() + "\n";
+        s += "Accumulated Credit/Subject: " + getAccumulatedCredit() + "/" + getAccumulatedSubject() + "\n";
+        s += "Number Of Debt Credit/Subject: " + getNumberOfDebtCredit() + "/" + getNumberOfDebtSubject() + "\n";
+        s += "Number Of Register Credit: " + getNumberOfRegisterCredit() + "\n\n";
 
         return s;
 
     }
 
     @Override
-    public String showDetailResultStudying() {
-        String s = "";
-        for (CourseResult temp: courseResults) {
-            s += temp.getNameSubject() + " - ";
-            s += "Middterm: " + temp.getMarkOfMiddterm() + " - ";
-            s += "Final: " + temp.getMarkOfFinalTerm() + " - ";
-            s += "Result: " + temp.getResult() + " - ";
-            s += "Classify: " + temp.getClassify() + "\n";
+    public void showDetailResultStudying() {
+        int i = 0;
+        System.out.println("--------------------------------------------------------------------------------------------------------------------");
+        System.out.println("                     " + "ID Student: "  + getID() + "  -  " + "Name: " + getName() );
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-4s | %-30s | %-8s | %-10s | %-10s | %-10s | %-10s | %-10s |\n", "", "Subject", "ID", "Weight", "Middterm", "Final", "Result", "Classify");
+        System.out.println("|------|--------------------------------|----------|------------|------------|------------|------------|------------|");
+        for (CourseResult temp:courseResults) {
+            System.out.printf("| %-4s | %-30s | %-8s | %-10d | %-10.1f | %-10.1f | %-10.1f | %-10s |\n", i++, temp.getNameSubject(), temp.getIDSubject(), temp.getSubject().getWeightOfSubject(), temp.getMarkOfMiddterm(), temp.getMarkOfFinalTerm(), temp.getResult(), temp.getClassify());
         }
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------*");
 
-        s += "---------------------------\n";
-        s += "CPA: " + this.getCPA() + "\n";
-        s += "Accumulated Credit/Subject: " + getAccumulatedCredit() + "/" + getAccumulatedSubject() + "\n";
-        s += "Number Of Debt Credit/Subject: " + getNumberOfDebtCredit() + "/" + getNumberOfDebtSubject() + "\n";
-        s += "Number Of Register Credit: " + getNumberOfRegisterCredit() + "\n\n";
-        return s;
+
+        System.out.println("--> CPA: " + this.getCPA());
+        System.out.println("--> Accumulated Credit/Subject: " + getAccumulatedCredit() + "/" + getAccumulatedSubject());
+        System.out.println("--> Number Of Debt Credit/Subject: " + getNumberOfDebtCredit() + "/" + getNumberOfDebtSubject());
+        System.out.println("--> Number Of Register Credit: " + getNumberOfRegisterCredit() + "\n");
     }
 
 

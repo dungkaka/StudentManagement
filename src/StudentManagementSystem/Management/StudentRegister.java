@@ -1,6 +1,7 @@
 package StudentManagementSystem.Management;
 
 import StudentManagementSystem.Class;
+import StudentManagementSystem.CourseResult;
 import StudentManagementSystem.SemesterOfStudent;
 import StudentManagementSystem.Student.CreditStudent;
 import StudentManagementSystem.Student.Student;

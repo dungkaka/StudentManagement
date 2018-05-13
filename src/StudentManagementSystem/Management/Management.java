@@ -10,8 +10,10 @@ import com.google.gson.reflect.TypeToken;
 
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.PropertyPermission;
 import java.util.Scanner;
@@ -29,35 +31,6 @@ public class Management {
 
         Gson gson = new Gson();
 
-        try (Reader reader = new FileReader("CreditStudents.json")) {
-
-            ArrayList<CreditStudent> creditStudents = new ArrayList<CreditStudent>();
-
-            creditStudents = gson.fromJson(reader, new TypeToken<ArrayList<CreditStudent>>() {
-            }.getType());
-
-            for (CreditStudent temp : creditStudents) {
-                students.add(temp);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-//
-//        try (Reader reader = new FileReader("studentInfo.json")) {
-//
-//            ArrayList<YearlyStudent> yearlyStudents = new ArrayList<YearlyStudent>();
-//
-//            yearlyStudents = gson.fromJson(reader, new TypeToken<ArrayList<CreditStudent>>() {
-//            }.getType());
-//
-//            for (YearlyStudent temp : yearlyStudents) {
-//                students.add(temp);
-//            }
-//
-//        } catch (IOException e) {
-//
-//        }
 
         try (Reader reader = new FileReader("Subjects.json")) {
 
@@ -74,7 +47,7 @@ public class Management {
             e.printStackTrace();
         }
 
-        try (Reader reader = new FileReader("Lectures.json")) {
+        try (Reader reader = new FileReader("Lecturers.json")) {
 
             ArrayList<Lecturer> lecturers = new ArrayList<Lecturer>();
 
@@ -89,13 +62,13 @@ public class Management {
             e.printStackTrace();
         }
 
+
         try (Reader reader = new FileReader("Classes.json")) {
 
             ArrayList<Class> classes = new ArrayList<Class>();
 
             classes = gson.fromJson(reader, new TypeToken<ArrayList<Class>>() {
             }.getType());
-
 
             for (Class temp: classes) {
                 Management.classes.add(temp);
@@ -104,39 +77,155 @@ public class Management {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//
-//        try (Reader reader = new FileReader("studentInfo.json")) {
-//
-//            ArrayList<Semester> semesters = new ArrayList<Semester>();
-//
-//            semesters = gson.fromJson(reader, new TypeToken<ArrayList<Semester>>() {
-//            }.getType());
-//
-//            for (Semester temp : semesters) {
-//                Management.semesters.add(temp);
-//            }
-//
-//        } catch (IOException e) {
-//
-//        }
-//
-//        try (Reader reader = new FileReader("studentInfo.json")) {
-//
-//            ArrayList<SemesterOfStudent> semesterOfStudents = new ArrayList<SemesterOfStudent>();
-//
-//            semesterOfStudents = gson.fromJson(reader, new TypeToken<ArrayList<SemesterOfStudent>>() {
-//            }.getType());
-//
-//            for (SemesterOfStudent temp : semesterOfStudents) {
-//                Management.semesterOfStudents.add(temp);
-//            }
-//
-//        } catch (IOException e) {
-//
-//        }
+
+        try (Reader reader = new FileReader("Semesters.json")) {
+
+            ArrayList<Semester> semesters = new ArrayList<Semester>();
+
+            semesters = gson.fromJson(reader, new TypeToken<ArrayList<Semester>>() {
+            }.getType());
+
+            for (Semester temp : semesters) {
+                Management.semesters.add(temp);
+            }
+
+        } catch (IOException e) {
+
+        }
+
+        try (Reader reader = new FileReader("SemesterOfStudents.json")) {
+
+            ArrayList<SemesterOfStudent> semesterOfStudents = new ArrayList<SemesterOfStudent>();
+
+            semesterOfStudents = gson.fromJson(reader, new TypeToken<ArrayList<SemesterOfStudent>>() {
+            }.getType());
+
+            for (SemesterOfStudent temp : semesterOfStudents) {
+                Management.semesterOfStudents.add(temp);
+            }
+
+        } catch (IOException e) {
+
+        }
+
+        try (Reader reader = new FileReader("CreditStudents.json")) {
+
+            ArrayList<CreditStudent> creditStudents = new ArrayList<CreditStudent>();
+
+            creditStudents = gson.fromJson(reader, new TypeToken<ArrayList<CreditStudent>>() {
+            }.getType());
+
+            for (CreditStudent temp : creditStudents) {
+                for (CourseResult temp1: temp.getCourseResults()) {
+                    temp1.setIDSubject();
+                    temp1.setNameSubject();
+                    temp1.setResult();
+                    temp1.setClassify();
+                }
+                students.add(temp);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try (Reader reader = new FileReader("YearlyStudents.json")) {
+
+            ArrayList<YearlyStudent> yearlyStudents = new ArrayList<YearlyStudent>();
+
+            yearlyStudents = gson.fromJson(reader, new TypeToken<ArrayList<YearlyStudent>>() {
+            }.getType());
+
+            for (YearlyStudent temp : yearlyStudents) {
+                for(SemesterOfStudent temp1: temp.getSemesterOfStudents()) {
+                    for(CourseResult temp2: temp1.getCourseResults()) {
+                        temp2.setNameSubjectByIDSubject();
+                        temp2.setIDClass(temp1.getSemesterName());
+                        temp2.setResult();
+                        temp2.setClassify();
+                    }
+                    temp1.setGPA();
+                }
+                students.add(temp);
+            }
+
+        } catch (IOException e) {
+
+        }
 
 
 
+
+    }
+    public static void writeToFile() {
+        Gson gson = new Gson();
+        try(FileWriter writer = new FileWriter("CreditStudents.json")) {
+            ArrayList<CreditStudent> creditStudents = new ArrayList<CreditStudent>();
+            for (Student temp: students) {
+                if(temp instanceof CreditStudent) {
+                    creditStudents.add((CreditStudent) temp);
+                }
+            }
+            gson.toJson(creditStudents, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("YearlyStudents.json")) {
+            ArrayList<YearlyStudent> yearlyStudents = new ArrayList<YearlyStudent>();
+            for (Student temp: students) {
+                if(temp instanceof YearlyStudent) {
+                    yearlyStudents.add((YearlyStudent) temp);
+                }
+            }
+            gson.toJson(yearlyStudents, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("Subjects.json")) {
+            gson.toJson(subjects, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("Lecturers.json")) {
+            gson.toJson(lecturers, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("Classes.json")) {
+            gson.toJson(classes, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("Semesters.json")) {
+            gson.toJson(semesters, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        try(FileWriter writer = new FileWriter("SemesterOfStudents.json")) {
+            gson.toJson(semesterOfStudents, writer);
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
     }
 
@@ -180,13 +269,64 @@ public class Management {
         }
         return null;
     }
-    public static SemesterOfStudent findSemesterOfStudentByName(String semesterName) {
+    public static SemesterOfStudent findSemesterOfStudentByNameAndID(String semesterName, String IDSemester) {
         for (SemesterOfStudent temp: semesterOfStudents) {
-            if(semesterName.equals(temp.getSemesterName())) {
+            if(semesterName.equals(temp.getSemesterName()) && IDSemester.equals(temp.getIDsemester())) {
                 return temp;
             }
         }
         return null;
+    }
+
+    public static void showListSubject() {
+        System.out.println("*---------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-10s | %-30s | %-10s | %-10s | %-10s | %-10s |\n", "ID", "Name", "Weight", "W Middterm", "W Final", "Prerequisite");
+        System.out.println("|------------|--------------------------------|------------|------------|------------|--------------|");
+        for (Subject temp : subjects) {
+            System.out.printf("| %-10s | %-30s | %-10d | %-10.1f | %-10.1f | %-12s |\n", temp.getID(), temp.getName(), temp.getWeightOfSubject(), temp.getWeightOfMiddterm(), temp.getWeigthOfFinalTest(), temp.showListIDPreSubject());
+        }
+        System.out.println("*---------------------------------------------------------------------------------------------------*");
+        System.out.println("");
+
+    }
+
+    public static void showListLecture() {
+        System.out.println("*------------------------------------------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-8s | %-25s | %-8s | %-12s | %-14s | %-15s | %-30s |\n", "ID", "Name", "Gender", "Birthday", "Phone Number", "Department", "Address");
+        System.out.println("|----------|---------------------------|----------|--------------|----------------|-----------------|--------------------------------|");
+        for (Lecturer temp: lecturers) {
+            System.out.printf("| %-8s | %-25s | %-8s | %-12s | %-14s | %-15s | %-30s |\n", temp.getID(), temp.getName(), temp.getSex(), temp.getBirthDay(), temp.getPhoneNumber(), temp.getDepartment(), temp.getAddress());
+        }
+        System.out.println("*------------------------------------------------------------------------------------------------------------------------------------*");
+        System.out.println("");
+    }
+
+    public static void showListClass() {
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------------*");
+        System.out.printf("| %-8s | %-10s |%-8s | %-25s | %-30s | %-10s | %-10s |\n", "ID", "Semester", "Classroom", "Lecturer", "Subject", "Time Start", "Time End");
+        System.out.println("|----------|------------|----------|---------------------------|--------------------------------|------------|------------|");
+        for(Class temp: classes) {
+            System.out.printf("| %-8s | %-10s | %-8s | %-25s | %-30s | %-10s | %-10s |\n", temp.getID(), temp.getSemesterName(), temp.getClassroom(), temp.getLecturer().getName(), temp.getSubject().getName(), temp.getTimeStart(), temp.getTimeEnd());
+        }
+        System.out.println("*-------------------------------------------------------------------------------------------------------------------------*");
+    }
+
+    public static void showListSemester() {
+        System.out.println("----------------------------------------------------------------------------------------------------------");
+        for (Semester temp: semesters) {
+            System.out.print(temp.showDetail());
+            System.out.println("----------------------------------------------------------------------------------------------------------");
+        }
+    }
+
+    public static void showListSemesterForStudent() {
+        System.out.println("*----------------------------------------------------------------------*");
+        System.out.printf("| %-15s | %-11s | %-10s | %-10s | %-10s |\n", "Semester Name", "Semester ID", "Classroom", "Time Start", "Time End");
+        System.out.println("|-----------------|-------------|------------|------------|------------|");
+        for (SemesterOfStudent temp: semesterOfStudents) {
+            System.out.printf("| %-15s | %-11s | %-10s | %-10s | %-10s |\n", temp.getSemesterName(), temp.getIDsemester(), temp.getClassroom(), temp.getTimeStart(), temp.getTimeEnd());
+        }
+        System.out.println("*----------------------------------------------------------------------*");
     }
 
 
@@ -197,7 +337,7 @@ public class Management {
         String IDSubject;
         float markOfMiddterm, markOfFinal;
         String IDClass, IDLecture;
-        String semesterName;
+        String semesterName, IDSemester;
         Student student;
         CourseResult courseResult;
         StudentManagement sm = new StudentManagement();
@@ -206,7 +346,6 @@ public class Management {
         Graduation gra = new Graduation();
 
         initialize();
-        System.out.println(((CreditStudent) students.get(0)).showDetail());
 
         do {
             System.out.println("STUDENT MANAGEMENT");
@@ -215,7 +354,8 @@ public class Management {
             System.out.println("2. Student Register");
             System.out.println("3. Grading Management");
             System.out.println("4. Graduation Management");
-            System.out.println("5. Exit");
+            System.out.println("5. Class, Subject, Lecture Management");
+            System.out.println("6. Exit");
             System.out.print("Your selection: ");
             selection = input.nextLine();
 
@@ -237,7 +377,7 @@ public class Management {
 
                         switch (selection) {
                             case "1":
-                                System.out.println(sm.showListInforStudent());
+                                sm.showListInforStudent();
                                 break;
 
                             case "2": // Add New Credit Student
@@ -260,6 +400,7 @@ public class Management {
 
 
                                 sm.addStudent(new CreditStudent(IDStudent, studentName, studentSex, studentBirthday, studentDepartment));
+                                System.out.println("Adding new student is SUCCESSFUL !!!");
                                 break;
 
                             case "3": // Add New Yearly Student
@@ -281,6 +422,7 @@ public class Management {
                                 studentDepartment = input.nextLine();
 
                                 sm.addStudent(new YearlyStudent(IDStudent, studentName, studentSex, studentBirthday, studentDepartment));
+                                System.out.println("Adding new student is SUCCESSFUL !!!");
                                 break;
 
 
@@ -294,6 +436,8 @@ public class Management {
                                 }
 
                                 sm.removeStudent(student);
+                                System.out.println("Removing student is SUCCESSFUL !!!");
+
 
                                 break;
 
@@ -360,8 +504,24 @@ public class Management {
                                     break;
                                 }
 
+                                if(((CreditStudent) student).checkExistSubject(aClass.getSubject())) {
+                                    System.out.println("This student have studied subject !");
+                                    System.out.println("Do you want to update ?");
+                                    System.out.println("1. Yes");
+                                    System.out.println("2. No!");
+                                    selection = input.nextLine();
+                                    if(selection.equals("1"))  {
+                                        ((CreditStudent) student).getCourseResults().remove(student.findCourseResultByIDSubject(aClass.getSubject().getID()));
+                                        sr.registerForCreditStudent(student, aClass);
+                                        System.out.println("Register is SUCCESSFUL !!");
+                                        break;
+                                    }
+                                    else if(selection.equals("2")) break;
+                                    else System.out.println("Please enter 1 or 2 !!!");
+                                };
+
                                 if(((CreditStudent) student).canRegisterClass(aClass) == false) {
-                                    System.out.println("Check Prerequisite for this Class");
+                                    System.out.println("Check Prerequisite for this Class !");
                                     break;
                                 }
 
@@ -380,26 +540,52 @@ public class Management {
                                     break;
                                 }
 
-                                if(!(student instanceof CreditStudent)) {
-                                    System.out.println("Student ID " + IDStudent + " is not Credit Student !!" );
+                                if(!(student instanceof YearlyStudent)) {
+                                    System.out.println("Student ID " + IDStudent + " is not YearlyStudent !!" );
                                     break;
                                 }
 
                                 System.out.println("ID Of Semester: ");
-                                semesterName = input.nextLine();
-                                SemesterOfStudent semesterOfStudent = findSemesterOfStudentByName(semesterName);
+                                IDSemester = input.nextLine();
 
-                                if(semesterOfStudent == null) {
-                                    System.out.println("There is not exist semester ID " + semesterName);
+                                if (((YearlyStudent) student).checkExistSemesterByIDSemester(IDSemester)) {
+                                    System.out.println("Register fail ! Student had been registered this semester before! ");
                                     break;
                                 }
 
-                                sr.registerForYearlyStudent(student, semesterOfStudent);
+                                System.out.println("Name Of Semester: ");
+                                semesterName = input.nextLine();
+                                SemesterOfStudent semesterOfStudent = findSemesterOfStudentByNameAndID(semesterName, IDSemester);
 
+                                if(semesterOfStudent == null) {
+                                    System.out.println("Something wrong! Please check information of semester !!" + semesterName);
+                                    break;
+                                }
+
+                                int i = 0;
+                                for (SemesterOfStudent temp: ((YearlyStudent) student).getSemesterOfStudents()) {
+                                    if (temp.getGPA() < 5) i++;
+                                }
+
+                                if (i != 0) {
+                                    System.out.println("This student can register this semester because of previous GPA < 5");
+                                    break;
+                                }
+
+                                else {
+                                    sr.registerForYearlyStudent(student, new SemesterOfStudent(
+                                            semesterName,
+                                            IDSemester,
+                                            semesterOfStudent.getClassroom(),
+                                            semesterOfStudent.getTimeStart(),
+                                            semesterOfStudent.getTimeEnd()
+                                    ));
+                                    System.out.println("Register is SUCCESSFUL !!!");
+                                }
                                 break;
 
                             case "3": // List Of Class (For Credit Student)
-                                sr.showListOfClass();
+                                showListClass();
                                 break;
 
                             case "4":
@@ -437,7 +623,7 @@ public class Management {
                                     break;
                                 }
 
-                                System.out.println(student.showDetailResultStudying());
+                                student.showDetailResultStudying();
 
                                 break;
                             case "2": // Set Mark
@@ -463,9 +649,8 @@ public class Management {
                                     System.out.println("This subject was classified. Do you want to update !");
                                     System.out.println("Please enter 1 to CONTINUE to update Or enter OTHER KEY to GO BACK !");
                                     selection = input.nextLine();
+                                    if (!selection.equals("1")) break;
                                 }
-
-                                if (!selection.equals("1")) break;
 
                                 System.out.println("Mark Of Middterm Test: ");
                                 markOfMiddterm = input.nextFloat();
@@ -473,6 +658,7 @@ public class Management {
                                 markOfFinal = input.nextFloat();
 
                                 gfc.setMark(courseResult, markOfMiddterm, markOfFinal);
+                                System.out.println("Set mark for student completed !");
 
                                 break;
 
@@ -496,16 +682,62 @@ public class Management {
                         System.out.println("There is not exist student ID " + IDStudent + "\n");
                         break;
                     }
-                    System.out.println(gra.getDegreeClassification(student));
+
+                    gra.graduation(student);
+                    System.out.println("--------------------------------------------------");
+
                     break;
 
                 case "5":
+                    do {
+                        System.out.println("CLASS, SUBJECT, LECTURER MANAGEMENT");
+                        System.out.println("---------------------------------");
+                        System.out.println("1. Show List Of Subject");      //**
+                        System.out.println("2. Show List Of Lecturer");
+                        System.out.println("3. Show List Of Class");
+                        System.out.println("4. Show List Of Semeter");
+                        System.out.println("5. Show List Of Semester For Student");
+                        System.out.println("6. Back");
+                        System.out.print("Your selection: ");
+                        selection = input.nextLine();
+
+                        if (selection.equals("6")) break;
+
+                        switch (selection) {
+                            case "1":
+                                showListSubject();
+                                break;
+                            case "2":
+                                showListLecture();
+                                break;
+                            case "3":
+                                showListClass();
+                                break;
+
+                            case "4":
+                                showListSemester();
+                                break;
+
+                            case "5":
+                                showListSemesterForStudent();
+                                break;
+
+                            default:
+                                System.out.println("Please enter \"1 - 6\" \n");
+                        }
+                    }  while (selection != "6");
+                    break;
+
+                case "6":
+                    writeToFile();
                     System.exit(0);
+
                     default:
-                        System.out.println("Please enter \"1 - 5\" \n");
+                        System.out.println("Please enter \"1 - 6\" \n");
             }
 
-        } while (selection != "5");
+        } while (selection != "6");
     }
+
 
 }

@@ -14,6 +14,10 @@ public class SemesterOfStudent {
 
     ArrayList<CourseResult> courseResults = new ArrayList<CourseResult>();
 
+    public SemesterOfStudent() {
+
+    }
+
     public SemesterOfStudent(String semesterName, String IDsemester, String classroom, String timeStart, String timeEnd) {
         this.semesterName = semesterName;
         this.IDsemester = IDsemester;
@@ -21,10 +25,11 @@ public class SemesterOfStudent {
         this.timeStart = timeStart;
         this.timeEnd = timeEnd;
 
-        Semester semester = getSemesterByID(IDsemester);
+        Semester semester = getSemesterByID();
         for(Subject temp: semester.subjects) {
             CourseResult courseResult = new CourseResult();
-            courseResult.setNameSubject(temp.getName());
+            courseResult.setIDSubject(temp.getID());
+            courseResult.setNameSubjectByIDSubject();
             courseResult.setIDClass(semesterName);
             courseResults.add(courseResult);
         }
@@ -69,19 +74,27 @@ public class SemesterOfStudent {
     public ArrayList<CourseResult> getCourseResults() {
         return courseResults;
     }
-    public void setCourseResults(ArrayList<CourseResult> courseResults) {
-        this.courseResults = courseResults;
+    public void setCourseResults() {
+        Semester semester = getSemesterByID();
+        for(Subject temp: semester.subjects) {
+            CourseResult courseResult = new CourseResult();
+            courseResult.setNameSubjectByIDSubject();
+            courseResult.setIDClass(semesterName);
+            courseResult.setResult();
+            courseResult.setClassify();
+            courseResults.add(courseResult);
+        }
     }
 
     public float getGPA() {
         return GPA;
     }
-    public void setGPA(float GPA) {
+    public void setGPA() {
         float sum = 0;
         int size = 0;
         for (CourseResult temp: courseResults) {
-            sum += temp.getResult() * temp.getClassByID().getSubject().getWeightOfSubject();
-            size += temp.getClassByID().getSubject().getWeightOfSubject();
+            sum += temp.getResult() * temp.getSubjectbyIDSubject().getWeightOfSubject();
+            size += temp.getSubjectbyIDSubject().getWeightOfSubject();
         }
 
         this.GPA = sum / size;
@@ -97,7 +110,7 @@ public class SemesterOfStudent {
 
     }
 
-    public Semester getSemesterByID(String IDsemester) {
+    public Semester getSemesterByID() {
         for (Semester temp: Management.semesters) {
             if (IDsemester.equals(temp.getID())) return temp;
         }

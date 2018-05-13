@@ -6,7 +6,7 @@ public class Semester {
     private String ID;
     String department;
 
-    ArrayList<Subject> subjects = new ArrayList<Subject>();
+    public ArrayList<Subject> subjects = new ArrayList<Subject>();
 
     public Semester(String ID, String department, ArrayList<Subject> subjects) {
         this.ID = ID;

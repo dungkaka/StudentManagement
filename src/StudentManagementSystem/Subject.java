@@ -68,10 +68,18 @@ public class Subject {
         return subject.getPreSubject().contains(this);
     }
 
-    public String showListPreSubject() {
+//    public String showListNamePreSubject() {
+//        String s = "";
+//        for (Subject temp: preSubject) {
+//            s += temp.getName() + ", ";
+//        }
+//        return s;
+//    }
+
+    public String showListIDPreSubject() {
         String s = "";
         for (Subject temp: preSubject) {
-            s += temp.getName() + ", ";
+            s += temp.getID() + ", ";
         }
         return s;
     }
